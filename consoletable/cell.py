@@ -11,7 +11,7 @@ class Cell(object):
     def __str__(self):
         if self._value is None:
             return "-"
-        return "{:,.2f}".format(self._value)
+        return "{:,.0f}".format(self._value)
 
     @property
     def value(self):
@@ -26,7 +26,7 @@ class Float(Cell):
     def __str__(self):
         if self._value is None:
             return "-"
-        return "${:,.2f}".format(self._value)
+        return "{:,.2f}".format(self._value)
 
 
 class USD(Cell):

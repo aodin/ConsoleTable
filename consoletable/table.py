@@ -99,10 +99,10 @@ class Table(object):
             # TODO error on unmatched rows?
 
         if len(self.categories) < 2:
-            raise Exception("Insufficient number of categories found: {}", len(self.categories))
+            raise Exception("There must be at least 2 categories, found {}", len(self.categories))
 
         if len(self.cells) < 1:
-            raise Exception("Insufficient number of cells found: {}", len(self.cells))
+            raise Exception("There must be at least 1 value, found {}", len(self.cells))
 
 
     def set_keys(self, x=None, y=None, value=None):
@@ -161,7 +161,7 @@ class Table(object):
         # TODO Try to fit in 80 columns
         sizes = defaultdict(int)
 
-        cell_type = self.cells.values()[0]
+        cell_type = self.cells[self.value_key]
 
         # TODO categories can provide customized sorting
         sorted_xs = sorted(self.xs)
