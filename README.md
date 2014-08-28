@@ -63,6 +63,6 @@ print Table(data, x=1, value=3).pretty(padding=" | ", header_char="=")
     2014-05-14 | 10.70 | 1.20 | 6.30
 
 
-This is a technology demostration and is not meant for use in production.
+This is a technology demonstration and is not meant for use in production.
 
 -aodin, 2014
