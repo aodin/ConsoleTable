@@ -4,7 +4,7 @@ from datetime import date
 from consoletable.table import Table
 
 data = [
-    ("Date", "Group", "Value", "Other"),
+    ("Date", "Group", "Value1", "Value2"),
     (date(2014, 5, 11), "A", 4, 1.5),
     (date(2014, 5, 12), "A", 3, 2.5),
     (date(2014, 5, 12), "A", 1, 1.5),
@@ -23,3 +23,4 @@ data = [
 
 print Table(data)
 print Table(data, x=1, value=3)
+print Table(data, x=1, value=3).pretty(padding=" | ", header_char="=")

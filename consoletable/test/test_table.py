@@ -6,7 +6,7 @@ from consoletable.table import Table
 
 
 example_list = [
-    ("Date", "Group", "Value", "Other"),
+    ("Date", "Group", "Value1", "Value2"),
     (date(2014, 5, 11), "A", 4, 1.5),
     (date(2014, 5, 12), "A", 3, 2.5),
     (date(2014, 5, 12), "A", 1, 1.5),
